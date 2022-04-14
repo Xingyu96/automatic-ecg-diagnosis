@@ -49,7 +49,23 @@ The labels above are:
 # Sinus tachycardia
 # Normal
 ```
-It's good that these labels are associated with particular locations on the heart, so we have a working reference model on which we can base our UI design. It's also good that the test accuracy for this model is around 0.97, which is very encouraging. You can examine the details in `outputs/figures` and `outputs/tables`.
+It's good that these labels are associated with particular locations on the heart, so we have a working reference model on which we can base our UI design. 
+
+### Model Acurracy
+
+It's also good that the test accuracy for this model is around 0.97, which is very encouraging. You can examine the original author's results in `outputs/figures` and `outputs/tables`.
+
+We can verify this in our jupyter notebook as well. From the 827 test samples, we can observe the following when comparing to the ground truth:
+
+|  | Correct Prediction | False Positive | False Negative |
+| - | - | - | - |
+| Number | 807 | 12 | 8 |
+| Percentage | 97.58% | 1.45% | 0.97% |
+
+Here are two examples of false positive and false negative for reference.
+
+![test_sample_438](https://user-images.githubusercontent.com/14202464/163443045-1ad4d4c9-4adb-4beb-a842-d2ad44d5448e.png)
+![test_sample_720](https://user-images.githubusercontent.com/14202464/163443112-e8c0fbc2-c70c-45fa-bcc5-d23a8fb67e67.png)
 
 ### Next Steps
 - Adjust our UI based on this prediction model
